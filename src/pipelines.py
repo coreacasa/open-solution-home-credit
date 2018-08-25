@@ -46,9 +46,9 @@ def xgboost(config, train_mode, suffix=''):
         features, features_valid = blocks.feature_extraction(config,
                                                              train_mode,
                                                              suffix,
-                                                             persist_output=True,
-                                                             cache_output=True,
-                                                             load_persisted_output=True)
+                                                             persist_output=False,
+                                                             cache_output=False,
+                                                             load_persisted_output=False)
         xgb = blocks.classifier_xgb((features, features_valid),
                                     config,
                                     train_mode,
@@ -57,7 +57,7 @@ def xgboost(config, train_mode, suffix=''):
         features = blocks.feature_extraction(config,
                                              train_mode,
                                              suffix,
-                                             cache_output=True)
+                                             cache_output=False)
         xgb = blocks.classifier_xgb(features,
                                     config,
                                     train_mode,
@@ -74,9 +74,9 @@ def sklearn_main(config, ClassifierClass, clf_name, train_mode, suffix='', norma
         features, features_valid = blocks.feature_extraction(config,
                                                              train_mode,
                                                              suffix,
-                                                             persist_output=True,
-                                                             cache_output=True,
-                                                             load_persisted_output=True)
+                                                             persist_output=False,
+                                                             cache_output=False,
+                                                             load_persisted_output=False)
 
         sklearn_preproc = blocks.preprocessing_fillna((features, features_valid), config, train_mode, suffix)
     else:
