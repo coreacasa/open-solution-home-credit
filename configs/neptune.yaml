@@ -19,7 +19,7 @@ exclude:
 
 parameters:
 # Data
-  train_filepath:                  YOUR/PATH/TO/application_train_1.csv
+  train_filepath:                  YOUR/PATH/TO/application_train.csv
   test_filepath:                   YOUR/PATH/TO/application_test.csv
   bureau_balance_filepath:         YOUR/PATH/TO/bureau_balance.csv
   bureau_filepath:                 YOUR/PATH/TO/bureau.csv
