@@ -20,14 +20,14 @@ exclude:
 parameters:
 # Data
   train_filepath:                 ../input/mysend7/application_train.csv
-  test_filepath:                  ../input/application_test.csv
-  bureau_balance_filepath:        ../input/bureau_balance.csv
-  bureau_filepath:                ../input/bureau.csv
-  credit_card_balance_filepath:   ../input/credit_card_balance.csv
-  installments_payments_filepath: ../input/installments_payments.csv
-  POS_CASH_balance_filepath:      ../input/POS_CASH_balance.csv
-  previous_application_filepath:  ../input/previous_application.csv
-  sample_submission_filepath:     ../input/sample_submission.csv
+  test_filepath:                  ../input/home-credit-default-risk/application_test.csv
+  bureau_balance_filepath:        ../input/home-credit-default-risk/bureau_balance.csv
+  bureau_filepath:                ../input/home-credit-default-risk/bureau.csv
+  credit_card_balance_filepath:   ../input/home-credit-default-risk/credit_card_balance.csv
+  installments_payments_filepath: ../input/home-credit-default-risk/installments_payments.csv
+  POS_CASH_balance_filepath:      ../input/home-credit-default-risk/POS_CASH_balance.csv
+  previous_application_filepath:  ../input/home-credit-default-risk/previous_application.csv
+  sample_submission_filepath:     ../input/home-credit-default-risk/sample_submission.csv
   experiment_directory:           /kaggle/working/result
 
 # Kaggle
