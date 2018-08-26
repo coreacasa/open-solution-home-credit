@@ -19,7 +19,7 @@ exclude:
 
 parameters:
 # Data
-  train_filepath:                 ../input/application_train.csv
+  train_filepath:                 ../input/mysend7/application_train_1.csv
   test_filepath:                  ../input/application_test.csv
   bureau_balance_filepath:        ../input/bureau_balance.csv
   bureau_filepath:                ../input/bureau.csv
